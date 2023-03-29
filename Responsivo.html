@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body {
+            background-color: rgba(50, 51, 51, 0.747);
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 320px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /*
+        
+        Para fazer uma imagem responsiva, você pode usar o width 100% com o 
+
+        img{
+            width: 100%;
+            
+        }
+            <picture>
+                <source media="(max-width: )" srcset=""> Quando chegar em um certo tamanho ira pegar a outra imagem com o formato diferente
+                <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+                
+            </picture>
+        */
+        
+        img{
+            width: 100%;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore pariatur iure, ullam dignissimos minus
+            voluptatibus inventore adipisci eos laborum dolores similique autem distinctio provident earum facilis quam
+            non
+            ab eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, soluta ex. Ipsa delectus quibusdam
+            recusandae, alias harum molestiae, blanditiis sit magnam, excepturi eveniet omnis temporibus qui doloremque
+            eligendi illo minima.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ducimus distinctio voluptatem culpa
+            perferendis,
+            quaerat architecto repellendus quasi, dolorem eligendi delectus ipsum voluptatibus aut. Porro laudantium
+            debitis
+            quidem repellendus nulla!
+        </p>
+        <picture>
+            <source media="(max-width: 550px )" srcset="imagens/irina-blok-pq.jpg">
+                     <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+            
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti hic voluptatum! Corrupti,
+            voluptatibus ea. Repellat minus voluptas illo. Fugit corporis omnis ea, eligendi natus rerum vel iure eos
+            ducimus!</p>
+    </main>
+</body>
+
+</html>
